@@ -182,6 +182,18 @@ body a:hover {
   margin: 0 auto;
 }
 
+[data-showmore-button] span:last-child {
+  display: none;
+}
+
+._showmore-active [data-showmore-button] span {
+  display: none;
+}
+
+._showmore-active [data-showmore-button] span:last-child {
+  display: inline-block;
+}
+
 [class*=-ibg] {
   position: relative;
 }
@@ -200,6 +212,8 @@ body a:hover {
   -o-object-fit: contain;
      object-fit: contain;
 }
+
+/* Common css*/
 
 .btn {
   display: inline-block;
@@ -694,6 +708,10 @@ body a:hover {
   min-width: 222px;
 }
 
+/*//// Common css*/
+
+/*  Header */
+
 .header {
   position: fixed;
   top: 0;
@@ -705,6 +723,9 @@ body a:hover {
 .header .menu {
   display: -ms-grid;
   display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-columns: minmax(100px, 300px) auto minmax(150px, 300px);
   grid-template-columns: minmax(100px, 300px) auto minmax(150px, 300px);
 }
@@ -787,6 +808,10 @@ body a:hover {
 .menu .icon-menu {
   display: none;
 }
+
+/* /// Header */
+
+/* Footer */
 
 .footer__top {
   display: -webkit-box;
@@ -942,6 +967,10 @@ body a:hover {
   display: -ms-flexbox;
   display: flex;
 }
+
+/* ////Footer */
+
+/* Home css */
 
 .first__container-big {
   position: relative;
@@ -1225,6 +1254,8 @@ body a:hover {
       -ms-transform: translate(-50%, -6%);
           transform: translate(-50%, -6%);
 }
+
+/*// Home css */
 
 @media (min-width: 103.125em) {
   .title {
