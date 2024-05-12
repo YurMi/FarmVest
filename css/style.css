@@ -659,6 +659,9 @@ body a:hover {
 
 .card-03__list_item::before {
   content: counter(my-awesome-counter);
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
@@ -707,8 +710,6 @@ body a:hover {
 .card-03 .btn {
   min-width: 222px;
 }
-
-/*//// Common css*/
 
 /*  Header */
 
